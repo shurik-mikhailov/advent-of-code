@@ -29,5 +29,5 @@ def part_two():
 
 
 input_data = get_input_data(year=2025, task_number=1)
-print(f'Part One: {part_one()}')
-print(f'Part Two: {part_two()}')
+print(f'part one: {part_one()}')
+print(f'part two: {part_two()}')
