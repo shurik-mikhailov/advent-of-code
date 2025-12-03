@@ -1,7 +1,7 @@
 from get_input_data import get_input_data
 
 
-def part_one():
+def part_one(input_data: str):
     pos, count = 50, 0
 
     for l in input_data.strip().splitlines():
@@ -13,7 +13,7 @@ def part_one():
     return count
 
 
-def part_two():
+def part_two(input_data: str):
     pos, count = 50, 0
 
     for l in input_data.strip().splitlines():
@@ -28,6 +28,6 @@ def part_two():
     return count
 
 
-input_data = get_input_data(year=2025, task_number=1)
-print(f'part one: {part_one()}')
-print(f'part two: {part_two()}')
+data = get_input_data(year=2025, task_number=1)
+print(f'part one: {part_one(input_data=data)}')
+print(f'part two: {part_two(input_data=data)}')

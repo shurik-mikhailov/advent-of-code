@@ -1,7 +1,7 @@
 from get_input_data import get_input_data
 
 
-def part_one():
+def part_one(input_data: str):
     ranges = input_data.strip().split(',')
     total = 0
 
@@ -19,7 +19,7 @@ def part_one():
     return total
 
 
-def part_two():
+def part_two(input_data: str):
     ranges = input_data.strip().split(',')
     total = 0
 
@@ -41,6 +41,6 @@ def part_two():
     return total
 
 
-input_data = get_input_data(year=2025, task_number=2)
-print(f'part one: {part_one()}')
-print(f'part two: {part_two()}')
+data = get_input_data(year=2025, task_number=2)
+print(f'part one: {part_one(input_data=data)}')
+print(f'part two: {part_two(input_data=data)}')
