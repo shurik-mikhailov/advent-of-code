@@ -29,7 +29,7 @@ def part_two(input_data: str):
         s = l.strip()
         k = 12
         n = len(s)
-        drop = n - k,
+        drop = n - k
         st = []
         for i, ch in enumerate(s):
             d = ch
