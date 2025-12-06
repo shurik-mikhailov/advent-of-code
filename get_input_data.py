@@ -8,4 +8,4 @@ def get_input_data(year: int, task_number: int) -> str:
     url = f'https://adventofcode.com/{year}/day/{task_number}/input'
     response = requests.get(url, cookies={'session': session_cookie})
 
-    return response.text.strip()
+    return response.text
