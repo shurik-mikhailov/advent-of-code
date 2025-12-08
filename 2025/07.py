@@ -43,27 +43,27 @@ def part_two(input_data: str):
     res = 0
 
     for y in range(start[0], h):
-        for x, count in timelines[y].items():
-            if count == 0:
+        for x, cnt in timelines[y].items():
+            if cnt == 0:
                 continue
 
             ny = y + 1
             if ny >= h:
-                res += count
+                res += cnt
                 continue
 
             if x < 0 or x > w:
-                res += count
+                res += cnt
                 continue
 
             if grid[ny][x] == '.':
-                timelines[ny][x] += count
+                timelines[ny][x] += cnt
 
             elif grid[ny][x] == '^':
                 if x - 1 >= 0:
-                    timelines[ny][x - 1] += count
+                    timelines[ny][x - 1] += cnt
                 if x + 1 < w:
-                    timelines[ny][x + 1] += count
+                    timelines[ny][x + 1] += cnt
     return res
 
 
