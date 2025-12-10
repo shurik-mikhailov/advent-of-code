@@ -1,5 +1,6 @@
 import requests
 
+
 def get_input_data(year: int, task_number: int) -> str:
     try:
         session_cookie = open(f"../cookie.txt", 'r').read()
