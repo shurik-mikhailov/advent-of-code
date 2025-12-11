@@ -1,5 +1,8 @@
 from itertools import product
 
+import numpy as np
+from scipy.optimize import milp, Bounds, LinearConstraint
+
 from get_input_data import get_input_data
 
 
@@ -80,9 +83,6 @@ def solve_machine(diagram, buttons):
 
 
 def solve_joltage_scipy(buttons, target):
-    import numpy as np
-    from scipy.optimize import milp, Bounds, LinearConstraint
-
     n_counters = len(target)
     n_buttons = len(buttons)
 
